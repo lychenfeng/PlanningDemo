@@ -1,0 +1,815 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>True</_NewBackgroundProfile>
+    <_PublishTargetUrl>D:\BaiDuNetdiskDownload\WebApplication2\Test</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>04/30/2018 14:27:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>04/30/2018 14:26:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="bin/polylineoffset.dll">
+      <publishTime>05/05/2018 19:39:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>04/30/2018 14:27:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>04/30/2018 14:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>04/30/2018 14:27:47</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/WebApplication2.dll">
+      <publishTime>05/05/2018 19:39:49</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.Deployment.resources.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.Razor.resources.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.resources.dll">
+      <publishTime>04/30/2018 14:26:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="ObjModel/ground.mtl">
+      <publishTime>05/01/2018 22:22:10</publishTime>
+    </File>
+    <File Include="ObjModel/ground.obj">
+      <publishTime>05/01/2018 22:22:10</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/bootstrap.min.js">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/css/bootstrap.min.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/css/essentials.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/css/jquery-ui-1.10.4.custom.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/css/layout-dark.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/et-line.eot">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/et-line.svg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/et-line.ttf">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/et-line.woff">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/font-icons.eot">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/font-icons.svg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/font-icons.ttf">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/font-icons.woff">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/fontawesome-webfont.eot">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/fontawesome-webfont.svg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/fontawesome-webfont.ttf">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/fontawesome-webfont.woff">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/fontawesome-webfont.woff2">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/FontAwesome.otf">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jquery-1.10.2.js">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jquery-1.10.2.min.js">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jquery-1.10.2.min.map">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jquery-dialog.js">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jquery-slider/jquery-ui-slider-pips.min.js">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jquery-ui.min.js">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/jstree.js">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/jstree.min.js">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/default-dark/32px.png">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/default-dark/40px.png">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/default-dark/style.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/default-dark/style.min.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/default-dark/throbber.gif">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/default/32px.png">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/default/40px.png">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/default/style.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/default/style.min.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/default/throbber.gif">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/30px.png">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/32px.png">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-bold-webfont.eot">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-bold-webfont.svg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-bold-webfont.ttf">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-bold-webfont.woff">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-extralight-webfont.eot">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-extralight-webfont.svg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-extralight-webfont.ttf">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-extralight-webfont.woff">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-regular-webfont.eot">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-regular-webfont.svg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-regular-webfont.ttf">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/fonts/titillium/titilliumweb-regular-webfont.woff">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/style.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/style.min.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/jstree/themes/proton/throbber.gif">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/toolbar/jquery.toolbar.css">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/third/toolbar/jquery.toolbar.js">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/bimviz.js">
+      <publishTime>04/30/2018 14:25:47</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/bimviz_banner.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/bimviz_banner2.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/contact.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/IFC-ico.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/ifc_logo.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/Ash_Billboard.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/asphalt_14x14m.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/asphalt_painted_white_7x7m.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/block.mtl">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/block.obj">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/centerline_double_yellow_14m.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/Chestnut_Billboard.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/crosswalk_continental_white.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/curbs_2m.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/Elm_Billboard.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/glass.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/Grass-green.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/Hickory_Billboard.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/Juniper_Billboard.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/lanes_4_stop_14x14m.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/lanes_4_stop_arrows_all_14x14m.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/lanes_4_stop_arrows_sides_14x14m.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/lanes_4_stop_word_14x14m.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/lanes_4_stripes_white_14x14m.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/Linden_Billboard.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/Magnolia_Billboard.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/MapleSummer_Billboard.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/maps/glass.jpg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/OakRed_Billboard.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/parking_02.jpg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/parking_03.jpg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/parking_05.jpg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/pavement_01_2x2m.jpg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/PineAustralian_Billboard.png">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/PineCedar_Billboard.png">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/soil_ground.jpg">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/land/Sycamore_Billboard.png">
+      <publishTime>04/30/2018 14:26:31</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/loading/46201453_10.gif">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/loading/46201453_4.gif">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/loading/5-121204193932-50.gif">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/loading/5-121204193951.gif">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/loading/5-121204193955-51.gif">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/loading/5-121204193Q8.gif">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/loading/5-130H2191323-52.gif">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/loading/5-130H2191324-51.gif">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/loading/5-1503130Q911-50.gif">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/1.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/2.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/3.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/4.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/5.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/arts-crafts.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/bluedock.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/business.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/camera.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/clock.gif">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/cluster.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/greendock.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/type_gif.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/type_icon.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/type_progress.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/type_switch.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/type_text.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/markers/type_textbox.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/beam.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/column.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/default.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/door.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/Furnishing.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/ifc.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/ifc_logo.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/railing.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/slab.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/stair.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/wall.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/types/window.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/cn/1.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/cn/2.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/cn/3.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/cn/4.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/cn/5.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/cn/6.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/en/1.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/en/2.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/en/3.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/en/4.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/en/5.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/en/6.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/xyz/1.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/xyz/2.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/xyz/3.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/xyz/4.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/xyz/5.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/images/viewbox/xyz/6.png">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/land/block.mtl">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/land/block.obj">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/land/Grass-green.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/land/soil_ground.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/uh60/fuselage.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/uh60/ground.mtl">
+      <publishTime>05/01/2018 22:22:10</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/uh60/ground.obj">
+      <publishTime>05/01/2018 22:22:10</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/uh60/land.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/uh60/pal.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/uh60/panel.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/uh60/Plt.jpg">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/uh60/uh60.1.obj">
+      <publishTime>04/30/2018 14:26:59</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/uh60/uh60.mtl">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/data/models/uh60/uh60.obj">
+      <publishTime>04/30/2018 14:27:05</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/restapi/BimVizWebApi.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/restapi/modelprojectmanager.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/restapi/projectbuildmanager.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/restapi/projectmanager.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/default-bak.css">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/default.css">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultBuildingStoreyControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultCameraBookmarkControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultDatabaseQueryControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultDomainControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultFileControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultFixedClipControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultHtmlMarkerControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultMarkControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultMarkSimpleListControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultMeasureControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultMessageControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultPropertyControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultRectSelectControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultRevitDomainControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultRoamingSettingControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultSearchControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultSelectionSetControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultSourceTreeHighlightControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultSourceTreeVisibilityControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultSpaceControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultToolBar.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultTreesHighlightControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultTreesVisibilityControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/DefaultVisibilityControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/ui/ExampleDatabaseQueryControl.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/BIMViz/sdk/viz/worker.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/bootstrap.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/bootstrap.min.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.10.2.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.10.2.min.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.10.2.min.map">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/modernizr-2.6.2.js">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="scripts/Test/2.png">
+      <publishTime>05/02/2018 22:07:14</publishTime>
+    </File>
+    <File Include="scripts/Test/arrows_ci1.png">
+      <publishTime>05/02/2018 22:06:07</publishTime>
+    </File>
+    <File Include="scripts/Test/home.index-3d.js">
+      <publishTime>05/04/2018 00:38:48</publishTime>
+    </File>
+    <File Include="scripts/Test/home.index.js">
+      <publishTime>04/30/2018 08:16:47</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>05/05/2018 13:35:38</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/04/2018 00:19:42</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>04/30/2018 14:26:07</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/02/2018 22:15:06</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8CF4552A-632B-494A-8AF4-AC8C527FAEC3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication2</RootNamespace>
+    <AssemblyName>WebApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\BIMViz\sdk\third\bootstrap.min.js" />
+    <Content Include="scripts\BIMViz\sdk\third\css\bootstrap.min.css" />
+    <Content Include="scripts\BIMViz\sdk\third\css\essentials.css" />
+    <Content Include="scripts\BIMViz\sdk\third\css\jquery-ui-1.10.4.custom.css" />
+    <Content Include="scripts\BIMViz\sdk\third\css\layout-dark.css" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\et-line.svg" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\font-icons.svg" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\fontawesome-webfont.svg" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="scripts\BIMViz\sdk\third\jquery-1.10.2.js" />
+    <Content Include="scripts\BIMViz\sdk\third\jquery-1.10.2.min.js" />
+    <Content Include="scripts\BIMViz\sdk\third\jquery-dialog.js" />
+    <Content Include="scripts\BIMViz\sdk\third\jquery-slider\jquery-ui-slider-pips.min.js" />
+    <Content Include="scripts\BIMViz\sdk\third\jquery-ui.min.js" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\jstree.js" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\jstree.min.js" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\default-dark\32px.png" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\default-dark\40px.png" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\default-dark\style.css" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\default-dark\style.min.css" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\default-dark\throbber.gif" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\default\32px.png" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\default\40px.png" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\default\style.css" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\default\style.min.css" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\default\throbber.gif" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\30px.png" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\32px.png" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-bold-webfont.svg" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-extralight-webfont.svg" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-regular-webfont.svg" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\style.css" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\style.min.css" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\throbber.gif" />
+    <Content Include="scripts\BIMViz\sdk\third\toolbar\jquery.toolbar.css" />
+    <Content Include="scripts\BIMViz\sdk\third\toolbar\jquery.toolbar.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\bimviz.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\bimviz_banner.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\bimviz_banner2.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\contact.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\IFC-ico.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\ifc_logo.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\Ash_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\asphalt_14x14m.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\asphalt_painted_white_7x7m.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\centerline_double_yellow_14m.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\Chestnut_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\crosswalk_continental_white.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\curbs_2m.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\Elm_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\glass.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\Grass-green.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\Hickory_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\Juniper_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\lanes_4_stop_14x14m.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\lanes_4_stop_arrows_all_14x14m.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\lanes_4_stop_arrows_sides_14x14m.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\lanes_4_stop_word_14x14m.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\lanes_4_stripes_white_14x14m.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\Linden_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\Magnolia_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\MapleSummer_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\maps\glass.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\OakRed_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\parking_02.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\parking_03.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\parking_05.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\pavement_01_2x2m.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\PineAustralian_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\PineCedar_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\soil_ground.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\Sycamore_Billboard.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\loading\46201453_10.gif" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\loading\46201453_4.gif" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\loading\5-121204193932-50.gif" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\loading\5-121204193951.gif" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\loading\5-121204193955-51.gif" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\loading\5-121204193Q8.gif" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\loading\5-130H2191323-52.gif" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\loading\5-130H2191324-51.gif" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\loading\5-1503130Q911-50.gif" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\1.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\2.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\3.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\4.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\5.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\arts-crafts.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\bluedock.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\business.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\camera.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\clock.gif" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\cluster.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\greendock.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\type_gif.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\type_icon.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\type_progress.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\type_switch.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\type_text.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\markers\type_textbox.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\beam.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\column.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\default.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\door.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\Furnishing.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\ifc.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\ifc_logo.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\railing.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\slab.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\stair.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\wall.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\types\window.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\cn\1.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\cn\2.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\cn\3.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\cn\4.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\cn\5.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\cn\6.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\en\1.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\en\2.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\en\3.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\en\4.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\en\5.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\en\6.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\xyz\1.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\xyz\2.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\xyz\3.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\xyz\4.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\xyz\5.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\viewbox\xyz\6.png" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\land\Grass-green.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\land\soil_ground.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\uh60\fuselage.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\uh60\land.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\uh60\pal.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\uh60\panel.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\uh60\Plt.jpg" />
+    <Content Include="scripts\BIMViz\sdk\viz\restapi\BimVizWebApi.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\restapi\modelprojectmanager.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\restapi\projectbuildmanager.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\restapi\projectmanager.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\default-bak.css" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\default.css" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultBuildingStoreyControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultCameraBookmarkControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultDatabaseQueryControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultDomainControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultFileControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultFixedClipControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultHtmlMarkerControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultMarkControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultMarkSimpleListControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultMeasureControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultMessageControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultPropertyControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultRectSelectControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultRevitDomainControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultRoamingSettingControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultSearchControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultSelectionSetControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultSourceTreeHighlightControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultSourceTreeVisibilityControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultSpaceControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultToolBar.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultTreesHighlightControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultTreesVisibilityControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\DefaultVisibilityControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\ui\ExampleDatabaseQueryControl.js" />
+    <Content Include="scripts\BIMViz\sdk\viz\worker.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\et-line.eot" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\et-line.ttf" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\et-line.woff" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\font-icons.eot" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\font-icons.ttf" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\font-icons.woff" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\fontawesome-webfont.eot" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\fontawesome-webfont.ttf" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\fontawesome-webfont.woff" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\fontawesome-webfont.woff2" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\FontAwesome.otf" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="scripts\BIMViz\sdk\third\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="scripts\BIMViz\sdk\third\jquery-1.10.2.min.map" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-bold-webfont.eot" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-bold-webfont.ttf" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-bold-webfont.woff" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-extralight-webfont.eot" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-extralight-webfont.ttf" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-extralight-webfont.woff" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-regular-webfont.eot" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-regular-webfont.ttf" />
+    <Content Include="scripts\BIMViz\sdk\third\jstree\themes\proton\fonts\titillium\titilliumweb-regular-webfont.woff" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\block.mtl" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\images\land\block.obj" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\land\block.mtl" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\land\block.obj" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\uh60\uh60.1.obj" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\uh60\uh60.mtl" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\uh60\uh60.obj" />
+    <Content Include="ObjModel\ground.mtl" />
+    <Content Include="ObjModel\ground.obj" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\uh60\ground.obj" />
+    <Content Include="scripts\BIMViz\sdk\viz\data\models\uh60\ground.mtl" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
+    <Content Include="scripts\Test\2.png" />
+    <Content Include="scripts\Test\arrows_ci1.png" />
+    <Content Include="scripts\Test\home.index-3d.js" />
+    <Content Include="scripts\Test\home.index.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\polylineoffset\polylineoffset.csproj">
+      <Project>{09bc4b28-55ee-4b06-8f25-02c1bd648755}</Project>
+      <Name>polylineoffset</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>47638</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:47638/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+C:\Users\ZQ\Desktop\WebApplication2\WebApplication2\polylineoffset\bin\Debug\polylineoffset.dll
+C:\Users\ZQ\Desktop\WebApplication2\WebApplication2\polylineoffset\bin\Debug\polylineoffset.pdb
+C:\Users\ZQ\Desktop\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.csprojResolveAssemblyReference.cache
+C:\Users\ZQ\Desktop\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.dll
+C:\Users\ZQ\Desktop\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.pdb
+D:\BaiDuNetdiskDownload\WebApplication2\WebApplication2\WebApplication2\polylineoffset\bin\Debug\polylineoffset.dll
+D:\BaiDuNetdiskDownload\WebApplication2\WebApplication2\WebApplication2\polylineoffset\bin\Debug\polylineoffset.pdb
+D:\BaiDuNetdiskDownload\WebApplication2\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.csprojResolveAssemblyReference.cache
+D:\BaiDuNetdiskDownload\WebApplication2\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.dll
+D:\BaiDuNetdiskDownload\WebApplication2\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.pdb

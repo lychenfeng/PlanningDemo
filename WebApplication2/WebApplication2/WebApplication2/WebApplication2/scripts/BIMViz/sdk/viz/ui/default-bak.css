@@ -1,0 +1,268 @@
+﻿body{
+    margin: 0px;
+	overflow: hidden;
+    font-family: '微软雅黑','Microsoft YaHei',Arial !important;
+}
+
+label{
+    margin-top: 5px; 
+}
+
+a:hover, a:focus{
+    color:#fff;
+    text-decoration: none;
+}
+
+.bimviz_gridback{
+    background: #323b44;
+}
+
+.bimviz_gradbackground {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3499FF,#C7E3FF); /* Standard syntax */
+}
+
+.bimviz_singlebackground {
+    background: white; /* For browsers that do not support gradients */
+}
+
+.bimviz_singlebackgroundblack {
+    background: black; /* For browsers that do not support gradients */
+}
+
+.bimviz_progress_div {
+    color: #3499FF;
+    bottom: 50px;
+    width: 100%;
+    font-size: 3em;
+    font-variant: small-caps;
+    font-weight: bold;
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    text-shadow: #000 0px 0px 1px;
+    display: none;
+}
+
+.bimviz_shadow {
+    -moz-box-shadow: 0px 0px 2px #000;
+    -webkit-box-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 2px #000;
+}
+
+.bimviz_progressbar_div {
+    text-align: center;
+    background: white;
+    width: 250px;
+    height: 10px;
+}
+
+.bimviz_progressbar_step {
+    background: #3499FF;
+    width: 0px;
+    height: 10px;
+}
+
+.bimviz_toolbar{
+    position:absolute;
+    left:0px; 
+    top:0px;
+    z-index:9999;
+    padding: 0;
+}
+
+
+.bimviz_toolbar_buttons{
+  margin: 10px;
+}
+
+
+.bimviz_toolbar_panel{
+    background-color:rgba(0, 0, 0, 0.66);
+    border:1px solid #cacaca;
+    height: 100%;
+    display:none;
+    color: #ffffff;
+    overflow:auto;
+}
+
+.list-item-font{  
+    width:100%;    
+    overflow:hidden; /*不显示超过对象宽度的内容*/  
+    text-overflow:ellipsis; /*当对象内文本溢出时显示省略标记（...）*/  
+    white-space:nowrap; /*限制在一行内显示所有文本*/  
+    color: #ffffff;
+    text-decoration: none;
+} 
+
+.list-item-fontsmall{  
+    font-size:12px;
+    color: #fcfcfc;
+    text-decoration: none;
+} 
+
+.resultSelectedBackground{
+    background-color:#333333;
+}
+
+.table_propset{
+    background-color:#444444;
+}
+
+
+.bimviz_disabled{
+    pointer-events:none;
+    opacity:0.7;
+}
+
+.bimviz_camera_bookmark_item{
+    float:left;
+    margin: 20px 10px 5px 10px;
+}
+
+.bimviz_camera_bookmark_item_img{
+    border:1px solid  #eee;
+    position:relative;width:200px;height:110px;
+}
+
+.bimviz_camera_bookmark_item_img span{ 
+    opacity: 0.2;
+    background-color: #000;
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+}
+
+.bimviz_camera_bookmark_item_img span i{ 
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.bimviz_camera_bookmark_item_img:hover{
+    border:1px dotted   #fff;
+}
+
+.bimviz_camera_bookmark_item_img:hover span{ 
+    opacity: 0.8;
+    background-color: #000;
+}
+
+.bimviz_camera_bookmark_item_span{
+    margin-top: 5px;
+    text-align: center !important;
+}
+
+.bimviz_camera_bookmark_startpanel{
+    float:left;
+    margin: 20px 0px 20px 20px;
+}
+
+.ui-dialog { z-index: 10000 !important ;}
+
+
+.bimviz_fixed_clip_item{
+    float:left;
+    margin: 20px 10px 5px 10px;
+}
+
+.bimviz_fixed_clip_item_img{
+    border:1px solid  #eee;
+    position:relative;width:220px;height:110px;
+}
+
+.bimviz_fixed_clip_item_img span{ 
+    opacity: 0.2;
+    background-color: #000;
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+}
+
+.bimviz_fixed_clip_item_img span i{ 
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.bimviz_fixed_clip_item_img:hover{
+    border:1px dotted   #fff;
+}
+
+.bimviz_fixed_clip_item_img:hover span{ 
+    opacity: 0.8;
+    background-color: #000;
+}
+
+.bimviz_fixed_clip_item_span{
+    margin-top: 5px;
+    text-align: center !important;
+}
+
+.bimviz_fixed_clip_startpanel{
+    float:left;
+    margin: 20px 0px 20px 20px;
+}
+
+.bv_viewbox_home{
+    color:#b8c1cd;
+    cursor: pointer;
+    float:right;
+}
+
+.bv_viewbox_home_div a:visited{
+    color:#b8c1cd;
+}
+
+.bv_viewbox_home_div a:active{
+    color:#6e7985;
+}
+
+.bv_viewbox_home_div a:hover{
+    color:#6e7985;
+}
+
+.bv_viewbox_change_text{
+    color:#b8c1cd;
+    cursor: pointer;
+    float:right;
+}
+
+.numberCircle {
+    border-radius: 50%;
+
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+
+    text-align: center;
+}
+
+ .relectbox {
+
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    opacity: 0.5;
+    cursor: move;
+    border: dotted black 3px;
+}
+
+.notselectable {
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -khtml-user-select: none;  
+    -ms-user-select: none;    
+
+    -o-user-select: none;
+    user-select: none;  
+}

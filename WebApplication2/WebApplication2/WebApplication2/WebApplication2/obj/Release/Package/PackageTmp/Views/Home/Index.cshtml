@@ -1,0 +1,198 @@
+﻿
+@{
+    ViewBag.Title = "BIM规划应用系统";
+}
+
+<h2></h2>
+<link href="~/Scripts/BIMViz/sdk/viz/ui/default.css" rel="stylesheet" type="text/css" />
+<script src="~/scripts/jquery-1.10.2.min.js"></script>
+<script src="~/scripts/BIMViz/sdk/viz/bimviz.js"></script>
+<script src="~/scripts/Test/home.index-3d.js"></script>
+<script src="~/scripts/BIMViz/sdk/viz/ui/DefaultToolBar.js"></script>
+<script src="~/scripts/BIMViz/sdk/viz/ui/DefaultRectSelectControl.js"></script>
+<div id="viewport" class="mainpanel">
+    <div class="row" style="position:absolute;left:30px;top:30px">
+        @*<a href="javascript:void(0)" onclick="CheckHight()" title="限高检查">
+            <img src="~/scripts/Test/arrows_ci1.png" />
+        </a>
+        <a href="javascript:void(0)" onclick="CheckArea()" title="红线退界检查">
+            <img src="~/scripts/Test/2.png" />
+        </a>*@
+        <button id="heightCheck" onclick="CheckHight()">限高检查</button>
+        <button id="AreaCheck" onclick="CheckArea()">红线退界检查</button>
+    </div>
+    <div id="ycbc1" style="position:absolute;left:30px;top:60px">
+        <label id="TextLabel">请输入限制高度:</label>
+        <input type="number" id="InputNum1" />
+        <button id="Confirm01" onclick="Confirm01()">塔楼限高检查</button>
+        <button id="Confirm04" onclick="Confirm04()">裙楼限高检查</button>
+    </div>  
+    <div id="ycbc2" style="position:absolute;left:30px;top:60px" >
+        <label id="TextLabel">请输入退界距离(m):</label>
+        <input type="number"  id="InputNum" />
+        @*<button id="Confirm02" onclick="Confirm02()" >向外扩大</button>*@
+        <button id="Confirm03" onclick="Confirm03()">向内减小</button>
+    </div>  
+</div>
+
+
+
+@*<div>
+    <button id="kuangxuan" onclick="MultipleChoice()">开始框选</button>
+</div>*@
+<script>
+    var height = $(window).height();
+    $('.mainpanel').css("height", height);
+    var projId = "0a70c657-dc7e-4794-8358-0c5e76c9aa78";
+    bimEngine = new BIMVIZ.RenderEngine({
+        projectId: projId,
+        renderDomId: 'viewport',
+        ip: "47.94.83.62",
+        port: 7005,
+        key: '054a8262-d8aa-419d-ba6a-e4b4d9d1770c',
+        //resizeMode: 'fullpage',
+        resourcePath: '/Scripts/BIMViz/sdk/viz/data/',
+        logo: false,
+        quickBar: {
+            show: false
+        },
+        selectSettings: {
+            grayScene: false,
+            cameraMove: false
+        }
+       
+    });
+    //x：122230.70742162317 y：184221.21500943613
+    bimEngine.addListener(BIMVIZ.EVENT.OnPickElement, onPickElement);
+    bimEngine.addListener(BIMVIZ.EVENT.OnExternal3dModelNodeSelected, onExternal3dModelNodeSelected);
+    bimEngine.addListener(BIMVIZ.EVENT.OnSelectElementPropertyList, onShowElementPropertyList);
+    bimEngine.addListener(BIMVIZ.EVENT.OnRectSelectExecuted, onRectSelectExecuted)
+    bimEngine.addListener(BIMVIZ.EVENT.OnSceneLoadCompleted, function () {
+
+        var transform = bimEngine.getElementTransform("3b2ca16f-45c3-4492-b3e7-19c50fb4daa4-00069076");
+        //console.log(transform);
+        //var projectdata = bimEngine.projectData;
+        //var center = projectCenter.center;
+        //center = new THREE.Vector3(122230.70742162317, 184221.21500943613, center.z);
+       // AddGround();
+        // 获取相机键盘操作移动速度
+        var oldspeed = bimEngine.getKeyControlMovementSpeed();
+        // 设置相机键盘操作移动速度
+        bimEngine.setKeyControlMovementSpeed(0.5 * oldspeed);
+        bimEngine.showGround = true;
+        //rectSelectManager = bimEngine.getRectSelectManager();
+        //alert(bimEngine.getKeyControlMovementSpeed());   // 查看设置后的相机键盘操作移动速度
+    
+        var data = bimEngine.getElementNodeList();
+        for (var i = 0; i < data.length; i++) {
+            //console.log(i);
+            //console.log(data[i]);
+            bimEngine.changeElementAlpha(data[i].Id, 0.3);
+        }
+
+        for (var i = 0; i < 4; i++) {
+            bimEngine.removeMarker(i, function () {
+                  
+            });
+        }
+
+        bimEngine.acquireSpacePoint(function (data) {
+            alert("选中的坐标点是 x：" + data.point.x + " y：" + data.point.y + " z：" + data.point.z);
+        });
+        bimEngine.requestOneUpdate();
+    });
+    bimEngine.start();
+    var isShow1 = false;
+    var isShow2 = false;
+    var type = 1;
+    $('#ycbc1').hide();
+    $('#ycbc2').hide();
+
+    function CheckHight() {
+        $('#ycbc2').hide();
+        isShow2 = false;
+        var label = document.getElementById("TextLabel");
+        label.innerHTML = "请输入高度(m):";
+        type = 1;
+        isShow1 = !isShow1;
+        if (isShow1) {
+            $('#ycbc1').show();
+        }
+        else {
+            $('#ycbc1').hide();
+        }
+    }
+
+    //塔楼
+    function Confirm01() {
+        var transform = bimEngine.getElementTransform("c8c91bce-f8d5-4326-9145-98bbf81cdd5e-00087fe6");
+        var num = $('#InputNum1').val();
+        bimEngine.translateElement("c8c91bce-f8d5-4326-9145-98bbf81cdd5e-00087fe6", 0, 0, num * 1000);
+        if (num > 134.87) {
+            alert("未超出限定高度");
+        }
+        else {
+            var data = 134.87 - num;
+            data = data.toFixed(2);
+            alert("超出限定高度:" + data + "米！");
+        }
+    }
+    //裙楼 22.47
+    function Confirm04() {
+        var num = $('#InputNum1').val();
+        bimEngine.translateElement("c8c91bce-f8d5-4326-9145-98bbf81cdd5e-00087fe6", 0, 0, num * 1000);
+        if (num > 22.47) {
+            alert("未超出限定高度");
+        }
+        else {
+            var data = 22.47 - num;
+            data = data.toFixed(2);
+            alert("超出限定高度:" + data + "米！");
+        }
+    }
+
+
+    function CheckArea() {
+        $('#ycbc1').hide();
+        isShow1 = false;
+        var label = document.getElementById("TextLabel");
+        label.innerHTML = "请输入退界距离(m):";
+        type = 2;
+        isShow2 = !isShow2;
+        if (isShow2) {
+            $('#ycbc2').show();
+        }
+        else {
+            $('#ycbc2').hide();
+        }
+    }
+    function Confirm02() {
+        var num = $('#InputNum').val();
+        var url = "Controllers/Home/Confirm?type=" + 1 + "&num=" + num;
+        
+        $.get(url, function (data) {
+            console.log(data.isOK);
+            for (var i = 0; i < data.Points.length; i++) {
+                alert(111);
+                var temp = data.point[i];
+                var point = new THREE.Vector3(temp.x * 1000, temp.y * 1000, 0);
+                console.log(point);
+                var marker = new BIMVIZ.Entity.Marker(i, "/scripts/BIMViz/sdk/viz/data/images/markers/business.png", point, "marker1", "marker1", "marker1");
+                bimEngine.createMarker(marker, function () {
+                    // 在场景中显示Marker
+                    bimEngine.showMarker(i, true);
+                });
+            }
+            alert(data.Message);
+        });
+    }
+
+    function Confirm03() {
+        var num = $('#InputNum').val();
+        var url = "Home/Confirm?type=" + 2 + "&num=" + num;
+       
+        $.get(url, function (data) {
+            alert(data.Message);
+        });
+    }
+</script>

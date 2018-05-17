@@ -31,7 +31,10 @@
         <label id="TextLabel">请输入退界距离(m):</label>
         <input type="number"  id="InputNum" />
         @*<button id="Confirm02" onclick="Confirm02()" >向外扩大</button>*@
-        <button id="Confirm03" onclick="Confirm03()">向内减小</button>
+        <button id="Confirm03" onclick="Confirm03(1)">北 向内减小</button>
+        <button id="Confirm05" onclick="Confirm03(2)">西 向内减小</button>
+        <button id="Confirm06" onclick="Confirm03(3)">南 向内减小</button>
+        <button id="Confirm07" onclick="Confirm03(4)">东 向内减小</button>
     </div>  
 </div>
 
@@ -89,12 +92,18 @@
             //console.log(data[i]);
             bimEngine.changeElementAlpha(data[i].Id, 0.3);
         }
+        var point = new THREE.Vector3(33000, 117000, 0);
+        var marker = new BIMVIZ.Entity.Marker("111", "images/markers/business.png", point, "marker1", "marker1", "marker1");
+        bimEngine.createMarker(marker, function () {
+            // 在场景中显示Marker
+            bimEngine.showMarker("111", true);
+        });
 
-        for (var i = 0; i < 4; i++) {
-            bimEngine.removeMarker(i, function () {
+        //for (var i = 0; i < 4; i++) {
+        //    bimEngine.removeMarker(i, function () {
                   
-            });
-        }
+        //    });
+        //}
 
         bimEngine.acquireSpacePoint(function (data) {
             alert("选中的坐标点是 x：" + data.point.x + " y：" + data.point.y + " z：" + data.point.z);
@@ -166,32 +175,96 @@
             $('#ycbc2').hide();
         }
     }
+
     function Confirm02() {
         var num = $('#InputNum').val();
         var url = "Controllers/Home/Confirm?type=" + 1 + "&num=" + num;
         
         $.get(url, function (data) {
-            console.log(data.isOK);
-            for (var i = 0; i < data.Points.length; i++) {
-                alert(111);
-                var temp = data.point[i];
-                var point = new THREE.Vector3(temp.x * 1000, temp.y * 1000, 0);
-                console.log(point);
-                var marker = new BIMVIZ.Entity.Marker(i, "/scripts/BIMViz/sdk/viz/data/images/markers/business.png", point, "marker1", "marker1", "marker1");
-                bimEngine.createMarker(marker, function () {
-                    // 在场景中显示Marker
-                    bimEngine.showMarker(i, true);
-                });
-            }
+            //for (var i = 0; i < data.Points.length; i++) {
+            //    var temp = data.point[i];
+            //    var point = new THREE.Vector3(temp.x * 1000, temp.y * 1000, 0);
+            //    console.log(point);
+            //    var marker = new BIMVIZ.Entity.Marker(i, "images/markers/business.png", point, "marker1", "marker1", "marker1");
+            //    bimEngine.createMarker(marker, function () {
+            //        // 在场景中显示Marker
+            //        bimEngine.showMarker(i, true);
+            //    });
+            //}
             alert(data.Message);
         });
     }
 
-    function Confirm03() {
+    function Confirm03(type) {
         var num = $('#InputNum').val();
-        var url = "Home/Confirm?type=" + 2 + "&num=" + num;
-       
+        var url = "/Home/Confirm?type=" + type + "&num=" + num;
+        console.log(url);
         $.get(url, function (data) {
+            //console.log(data);
+            //if (type == 1) {
+            //    var temp0 = data.Points[0];
+            //    var point0 = new THREE.Vector3(temp0.x * 1000, temp0.y * 1000, 0);
+            //    var marker0 = new BIMVIZ.Entity.Marker("111", "images/markers/business.png", point0, "marker1", "marker1", "marker1");
+            //    bimEngine.createMarker(marker0, function () {
+            //        // 在场景中显示Marker
+            //        bimEngine.showMarker("111", true);
+            //    });
+            //    var temp1 = data.Points[1];
+            //    var point1 = new THREE.Vector3(temp1.x * 1000, temp1.y * 1000, 0);
+            //    var marker1 = new BIMVIZ.Entity.Marker("222", "images/markers/business.png", point1, "marker1", "marker1", "marker1");
+            //    bimEngine.createMarker(marker1, function () {
+            //        // 在场景中显示Marker
+            //        bimEngine.showMarker("222", true);
+            //    });
+            //}
+            //if (type == 2) {
+            //    var temp0 = data.Points[1];
+            //    var point0 = new THREE.Vector3(temp0.x * 1000, temp0.y * 1000, 0);
+            //    var marker0 = new BIMVIZ.Entity.Marker("111", "images/markers/business.png", point0, "marker1", "marker1", "marker1");
+            //    bimEngine.createMarker(marker0, function () {
+            //        // 在场景中显示Marker
+            //        bimEngine.showMarker("111", true);
+            //    });
+            //    var temp1 = data.Points[2];
+            //    var point1 = new THREE.Vector3(temp1.x * 1000, temp1.y * 1000, 0);
+            //    var marker1 = new BIMVIZ.Entity.Marker("222", "images/markers/business.png", point1, "marker1", "marker1", "marker1");
+            //    bimEngine.createMarker(marker1, function () {
+            //        // 在场景中显示Marker
+            //        bimEngine.showMarker("222", true);
+            //    });
+            //}
+            //if (type == 3) {
+            //    var temp0 = data.Points[2];
+            //    var point0 = new THREE.Vector3(temp0.x * 1000, temp0.y * 1000, 0);
+            //    var marker0 = new BIMVIZ.Entity.Marker("111", "images/markers/business.png", point0, "marker1", "marker1", "marker1");
+            //    bimEngine.createMarker(marker0, function () {
+            //        // 在场景中显示Marker
+            //        bimEngine.showMarker("111", true);
+            //    });
+            //    var temp1 = data.Points[3];
+            //    var point1 = new THREE.Vector3(temp1.x * 1000, temp1.y * 1000, 0);
+            //    var marker1 = new BIMVIZ.Entity.Marker("222", "images/markers/business.png", point1, "marker1", "marker1", "marker1");
+            //    bimEngine.createMarker(marker1, function () {
+            //        // 在场景中显示Marker
+            //        bimEngine.showMarker("222", true);
+            //    });
+            //}
+            //if (type == 4) {
+            //    var temp0 = data.Points[3];
+            //    var point0 = new THREE.Vector3(temp0.x * 1000, temp0.y * 1000, 0);
+            //    var marker0 = new BIMVIZ.Entity.Marker("111", "images/markers/business.png", point0, "marker1", "marker1", "marker1");
+            //    bimEngine.createMarker(marker0, function () {
+            //        // 在场景中显示Marker
+            //        bimEngine.showMarker("111", true);
+            //    });
+            //    var temp1 = data.Points[0];
+            //    var point1 = new THREE.Vector3(temp1.x * 1000, temp1.y * 1000, 0);
+            //    var marker1 = new BIMVIZ.Entity.Marker("222", "images/markers/business.png", point1, "marker1", "marker1", "marker1");
+            //    bimEngine.createMarker(marker1, function () {
+            //        // 在场景中显示Marker
+            //        bimEngine.showMarker("222", true);
+            //    });
+            //}
             alert(data.Message);
         });
     }

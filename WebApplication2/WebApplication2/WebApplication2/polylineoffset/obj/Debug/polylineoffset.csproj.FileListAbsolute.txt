@@ -8,3 +8,8 @@ D:\BaiDuNetdiskDownload\WebApplication2\WebApplication2\WebApplication2\polyline
 D:\BaiDuNetdiskDownload\WebApplication2\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.csprojResolveAssemblyReference.cache
 D:\BaiDuNetdiskDownload\WebApplication2\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.dll
 D:\BaiDuNetdiskDownload\WebApplication2\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.pdb
+F:\GitProjects\PlanningDemo\PlanningDemo\WebApplication2\WebApplication2\WebApplication2\polylineoffset\bin\Debug\polylineoffset.dll
+F:\GitProjects\PlanningDemo\PlanningDemo\WebApplication2\WebApplication2\WebApplication2\polylineoffset\bin\Debug\polylineoffset.pdb
+F:\GitProjects\PlanningDemo\PlanningDemo\WebApplication2\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.csprojResolveAssemblyReference.cache
+F:\GitProjects\PlanningDemo\PlanningDemo\WebApplication2\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.dll
+F:\GitProjects\PlanningDemo\PlanningDemo\WebApplication2\WebApplication2\WebApplication2\polylineoffset\obj\Debug\polylineoffset.pdb

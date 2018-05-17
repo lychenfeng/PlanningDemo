@@ -1,0 +1,6 @@
+F:\GitProjects\PlanningDemo\PlanningDemo\WebApplication2\WebApplication2\WebApplication2\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+F:\GitProjects\PlanningDemo\PlanningDemo\WebApplication2\WebApplication2\WebApplication2\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+F:\GitProjects\PlanningDemo\PlanningDemo\WebApplication2\WebApplication2\WebApplication2\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+F:\GitProjects\PlanningDemo\PlanningDemo\WebApplication2\WebApplication2\WebApplication2\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+F:\GitProjects\PlanningDemo\PlanningDemo\WebApplication2\WebApplication2\WebApplication2\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+F:\GitProjects\PlanningDemo\PlanningDemo\WebApplication2\WebApplication2\WebApplication2\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
